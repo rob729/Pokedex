@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/card_background">
+
+        <EditText
+            android:id="@+id/edt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:hint="Enter the Pokemon Number"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/bn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="submit" />
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/prev"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:textSize="28sp"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white"
+            android:background="@drawable/mybutton"
+            android:layout_marginBottom="100dp"
+            android:layout_marginStart="4dp"/>
+        <Button
+            android:id="@+id/next"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:text=">"
+            android:textSize="28sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/mybutton"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="4dp"/>
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@id/ll1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/ques"
+        android:background="@drawable/card_background"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textSize="28sp"
+        android:layout_below="@id/img"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"/>
+    <TextView
+        android:id="@+id/rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Rank"
+        android:textSize="22sp"
+        android:layout_below="@id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"/>
+
+
+    <TextView
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_below="@id/rank"
+        android:hint="weight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"/>
+    <TextView
+        android:id="@+id/height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_below="@id/weight"
+        android:hint="Height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"/>
+    <TextView
+        android:id="@+id/exp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_below="@id/height"
+        android:hint="Exp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"/>
+
+
+
+</RelativeLayout>
